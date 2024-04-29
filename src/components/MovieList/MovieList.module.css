@@ -1,0 +1,61 @@
+.listMovies {
+  margin: 0;
+  margin-top: 16px;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+
+.listItem {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+}
+.linkTitle {
+  text-decoration: none;
+  color: rgb(24, 101, 129);
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+.linkTitle:hover,
+.linkTitle:focus {
+  color: #a426a4;
+}
+
+.image {
+  width: 600px;
+}
+
+.titleSearch {
+  display: flex;
+  justify-content: center;
+}
+
+.serchMoviesList {
+  display: flex;
+  list-style-type: none;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.serchMoviesListItem {
+  width: 200px;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.linkSearchMovie {
+  text-decoration: none;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
