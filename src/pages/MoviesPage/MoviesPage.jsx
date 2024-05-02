@@ -1,5 +1,5 @@
 import { useEffect, useState, lazy, Suspense } from "react";
-import { useSearchParams, useHistory } from "react-router-dom";
+import { useSearchParams } from "react-router-dom";
 import css from "./MoviesPage.module.css";
 import { getSearch } from "../../movies-api";
 const MovieList = lazy(() => import("../../components/MovieList/MovieList"));
@@ -10,7 +10,6 @@ export default function MoviesPage() {
   const [error, setError] = useState(false);
   const [loading, setLoading] = useState(false);
   const [searchParams, setSearchParams] = useSearchParams();
-  const history = useHistory();
 
   useEffect(() => {
     async function fetchSearch() {
